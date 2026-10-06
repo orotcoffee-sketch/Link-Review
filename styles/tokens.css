@@ -1,0 +1,34 @@
+/* 디자인 토큰. 색상/치수는 가능하면 여기서만 정의하고 var(--...)로 참조한다.
+   (SVG 속성에 직접 쓰인 색은 var()를 쓸 수 없어 components/entry/SecretEyeLogo.tsx에 리터럴로 남아 있다.) */
+
+:root {
+  /* color */
+  --color-bg: #080808;
+  --color-text: #f2efe7;
+  --color-muted: rgba(242, 239, 231, 0.48);
+  --color-placeholder: rgba(242, 239, 231, 0.25);
+  --color-placeholder-strong: rgba(242, 239, 231, 0.35);
+  --color-accent: #c8a96a;
+  --color-accent-rgb: 200 169 106; /* rgb(var(--color-accent-rgb) / 0.4) 형태로 알파와 함께 사용 */
+  --color-divider: rgba(255, 255, 255, 0.09);
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-border-focus: rgba(255, 255, 255, 0.28);
+  --color-line-strong: rgba(255, 255, 255, 0.18); /* auth input 밑줄 */
+  --color-hover: rgba(255, 255, 255, 0.025);
+  --color-error: #c9786a;
+  --color-void: #000; /* Entry 전환의 "통로" 검정 */
+
+  /* layout / spacing */
+  --content-max: 1520px;
+  --content-gutter: 64px; /* .wrap: calc(100% - var(--content-gutter)) */
+  --nav-height: 60px;
+  --logo-size: 170px; /* Entry 로고 (desktop) */
+  --logo-size-mobile: 120px; /* Entry 로고 (<= 640px) */
+
+  /* typography scale */
+  --font-nav: 14px;
+  --font-home-lead: 48px;
+  --font-home-name: 20px;
+  --font-cat-headline: 40px;
+  --font-dir-name: 22px;
+}
